@@ -2,4 +2,4 @@
 
 ### ADIVINAR JUEGO
 
-    -Trabajando...
+    - Terminado!
