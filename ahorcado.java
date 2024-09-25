@@ -89,7 +89,7 @@ public class ahorcado {
             guessWord[i] = '_';
         }
 
-        // Limite de 6 errores o NO success
+        //
         while (errors < limit && !win) {
             for (char c : guessWord) {
                 System.out.print(c + " ");
@@ -125,20 +125,25 @@ public class ahorcado {
                 success = false;
                 tourn++;
             }
-        }
 
-        // Verificar si están todas las letras con un forEach
-        win = true;
-        for (char c : guessWord) {
-            if (c == '_') {
-                win = false;
+            // Verificar si están todas las letras con un forEach
+            for (char c : guessWord) {
+                if (c == '_') {
+                    win = false;
+                } else {
+                    win = true;
+                }
+            }
+
+            // Salir del while si win == true
+            if (win) {
                 break;
             }
         }
 
         // Comprobante de si ha ganado
-        if (win) {
-            System.out.println("Enhorabuena! Ha acertado la palabra " + word);
+        if (win == true) {
+            System.out.println("Enhorabuena! Ha acertado la palabra " + word + " en " + tourn + " turnos!");
         } else {
             System.out.println("Game Over... No te quedan más intentos!");
         }
