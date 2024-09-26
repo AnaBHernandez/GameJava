@@ -60,7 +60,7 @@ public class ahorcado {
         };
 
         // Declaración de variables
-        int tourn = 0;
+        int turn = 0;
         int limit = ahorcado.length - 1;
         int errors = 0;
         boolean success = false;
@@ -89,15 +89,15 @@ public class ahorcado {
             guessWord[i] = '_';
         }
 
-        //
+        // Lógica del juego
         while (errors < limit && !win) {
             for (char c : guessWord) {
                 System.out.print(c + " ");
             }
 
-            System.out.print("|| Turno " + (tourn + 1) + ": ");
+            System.out.print("|| Turno " + (turn + 1) + ": ");
             System.out.println("Introduzca una letra");
-            letter = scanner.next().toUpperCase();
+            letter = scanner.next().toUpperCase(); // A
 
             // Buscamos si se ha acertado
             for (int i = 0; i < word.length(); i++) {
@@ -119,19 +119,19 @@ public class ahorcado {
                 }
 
                 errors++;
-                tourn++;
+                turn++;
             } else {
                 System.out.println("Correcto! Ha acertado una letra");
                 success = false;
-                tourn++;
+                turn++;
             }
 
             // Verificar si están todas las letras con un forEach
-            for (char c : guessWord) {
-                if (c == '_') {
+            win = true;
+            for (char value : guessWord) {
+                if (value == '_') {
                     win = false;
-                } else {
-                    win = true;
+                    break;
                 }
             }
 
@@ -143,7 +143,7 @@ public class ahorcado {
 
         // Comprobante de si ha ganado
         if (win == true) {
-            System.out.println("Enhorabuena! Ha acertado la palabra " + word + " en " + tourn + " turnos!");
+            System.out.println("Enhorabuena! Ha acertado la palabra " + word + " en " + turn + " turnos!");
         } else {
             System.out.println("Game Over... No te quedan más intentos!");
         }
