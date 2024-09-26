@@ -1,6 +1,12 @@
 ## README 3 JUEGOS
 
-### **README EXPLICACIÓN JUEGOVADIVINA EL NÚMERO**
+## MENU
+
+- El usuario podrá jugar a cualquiera de los 3 juegos ejecutando el componente
+
+## JUEGOS
+
+### **ADIVINA EL NÚMERO**
 
 - El programa sortea un número entre 0 y 99 y pide al usuario repetidamente que adivine el número.
 - Cada vez que se equivoca, le indica si el número es mayor o menor. Cuando acierta, le indica cuantos intentos fallidos realizó.
