@@ -79,6 +79,9 @@ public class conecta {
                 System.out.println();
             }
         }
+
+        // Finalización
+        // Se finaliza en el MENU || Opcional, incluir scanner.close();
     }
 
     // Dibujo de tabla

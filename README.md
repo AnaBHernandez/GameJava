@@ -8,7 +8,7 @@
 
 ### **ADIVINA EL NÚMERO**
 
-- El programa sortea un número entre 0 y 99 y pide al usuario repetidamente que adivine el número.
+- El programa sortea un número entre el 1 y 100 inlcuido y pide al usuario repetidamente que adivine el número.
 - Cada vez que se equivoca, le indica si el número es mayor o menor. Cuando acierta, le indica cuantos intentos fallidos realizó.
 
 ### **JUEGO AHORCADO**

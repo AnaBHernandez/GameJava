@@ -149,5 +149,6 @@ public class ahorcado {
         }
 
         // Finalización
+        // Se finaliza en el MENU || Opcional, incluir scanner.close();
     }
 }
