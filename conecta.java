@@ -79,8 +79,6 @@ public class conecta {
                 System.out.println();
             }
         }
-
-        scanner.close();
     }
 
     // Dibujo de tabla
@@ -166,7 +164,7 @@ public class conecta {
                 }
             }
         }
-        
+
         return false;
     }
 }
