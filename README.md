@@ -1,36 +1,85 @@
-## README 3 JUEGOS
+# 🎮 GameJava - Colección de Juegos en Java
 
-## MENU
+Una colección de 3 juegos clásicos implementados en Java con interfaz de consola.
 
-- El usuario podrá jugar a cualquiera de los 3 juegos ejecutando el componente
+## 📋 Características
 
-## JUEGOS
+- **Menú interactivo** para seleccionar juegos
+- **3 juegos completos**: Adivinar Número, Ahorcado y Conecta 4
+- **Interfaz de usuario amigable** con mensajes claros
+- **Validación de entrada** en todos los juegos
+- **Sistema de reinicio** para jugar múltiples veces
 
-### **ADIVINA EL NÚMERO**
+## 🚀 Cómo Ejecutar
 
-- El programa sortea un número entre el 1 y 100 inlcuido y pide al usuario repetidamente que adivine el número.
-- Cada vez que se equivoca, le indica si el número es mayor o menor. Cuando acierta, le indica cuantos intentos fallidos realizó.
+### Requisitos
+- Java 8 o superior
+- Compilador javac
 
-### **JUEGO AHORCADO**
+### Compilación y Ejecución
 
-- Generar un número al azar, y con ese número escoger una palabra de entre las predefinidas. Esa es la palabra que deberá adivinar el usuario.
+```bash
+# Compilar todos los archivos
+javac *.java
 
-* Repetimos:
+# Ejecutar el menú principal
+java menu
+```
 
-- El usuario elige una letra.
-- Si esa letra está en la palabra buscada, mostramos en que posiciones se encuentra.
-- Si no está en la palabra, le queda un intento menos.
-  Hasta que se quede sin intentos o acierte la palabra.
+### Ejecución Individual de Juegos
 
-### **CONECTA 4**
+```bash
+# Adivinar Número
+java adivinarJuego
 
-- Jugador 1 tiene X y jugador 2 tiene O.
-- Cada jugador tiene una ficha.
-- Por cada turno va a jugar un jugador diferente.
-- Jugador 1 lanza ficha X
-- Jugador 2 lanza ficha O
-- Cada jugar selecciona en qué columna va su ficha.
-- Si pone O o más de 7, mensaje de movimiento erróneo.
-- Vuelve a tener oportunidad de jugar de nuevo.
-- Así sucesivamente hasta terminar.
-- Gana el qué consiga tener arriba, a un lado y en diagonal todas sus fichas.
+# Ahorcado
+java ahorcado
+
+# Conecta 4
+java conecta
+```
+
+## 🎯 Juegos Incluidos
+
+### 🎲 **Adivinar el Número**
+- El programa genera un número aleatorio entre 1 y 100
+- El jugador debe adivinar el número con pistas de "mayor" o "menor"
+- Muestra el número de intentos al finalizar
+- Opción de reiniciar el juego
+
+### 🎯 **Ahorcado**
+- Selección aleatoria de palabras predefinidas
+- Sistema visual del ahorcado que se completa con cada error
+- Detección de letras correctas e incorrectas
+- Victoria al completar la palabra o derrota al completar el ahorcado
+
+### 🎯 **Conecta 4**
+- Tablero de 6x7 casillas
+- Dos jugadores (X y O) por turnos
+- Objetivo: conectar 4 fichas en línea (horizontal, vertical o diagonal)
+- Validación de movimientos y detección automática de victoria
+
+## 🛠️ Estructura del Proyecto
+
+```
+GameJava/
+├── menu.java          # Menú principal
+├── adivinarJuego.java # Juego de adivinar número
+├── ahorcado.java      # Juego del ahorcado
+├── conecta.java       # Juego Conecta 4
+└── README.md          # Este archivo
+```
+
+## 🎮 Cómo Jugar
+
+1. Ejecuta `java menu` para acceder al menú principal
+2. Selecciona el juego que deseas jugar (1-3)
+3. Sigue las instrucciones en pantalla
+4. ¡Disfruta jugando!
+
+## 📝 Notas Técnicas
+
+- Todos los juegos incluyen validación de entrada
+- Sistema de manejo de errores implementado
+- Código modular y bien documentado
+- Compatible con cualquier sistema que tenga Java instalado

@@ -38,7 +38,7 @@ public class adivinarJuego {
 
     // Método para jugar al juego
     public static void playGame(Scanner scanner, Random random) {
-        // Generar un número aleatorio entre 0 y 100 || 100 + 1 para dejar fuera el nº 0
+        // Generar un número aleatorio entre 1 y 100
         int number = random.nextInt(100) + 1;
         int x;
         int count = 0;
